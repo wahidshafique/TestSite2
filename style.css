@@ -1,5 +1,13 @@
-﻿body {
+﻿.container-fluid * {
+  border-radius: 0 !important;
+}
+
+body {
 	overflow-x: hidden;
+}
+
+.bg {
+	background-color: white;
 }
 
 .sidebar {
@@ -32,6 +40,7 @@ a {
 
 h1 {
 	font-family: "Ubuntu";
+	margin: 10% 0 10% 0;
 }
 
 .container-fluid {
@@ -62,4 +71,33 @@ h1 {
 
 .sub {
 	background-color: #3491D3;
+}
+
+p {
+	color: white;
+	padding: 5% 5% 5% 5%;
+}
+
+
+/*ICONS*/
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.fa-twitter-square:hover:before {
+    color: rgba(0, 172, 237, 1);
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.fa-facebook-square:hover:before {
+    color: rgba(59, 89, 152, 1);
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.fa-github-square:hover:before {
+    color: black;
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
 }
