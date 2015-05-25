@@ -1,10 +1,17 @@
 ﻿
 body {
 	overflow-x: hidden;
+	line-height: 0;
+}
+
+.container-fluid .jumbotron {
+	border-radius: 0px;
 }
 
 .bg {
 	background-color: white;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
 }
 
 .sidebar {
@@ -24,12 +31,6 @@ body {
 	margin:0 0 60px 0;
 	padding: 0 0 0 0; 
 }
-.social {
-	margin-top: 25%;
-}
-.social i {
-	margin-right: 10px;
-}
 
 a {
 	color:white;
@@ -39,9 +40,12 @@ h1 {
 	font-family: "Ubuntu";
 	margin: 10% 0 10% 0;
 }
+.container {
+	margin-right: 0px;
+}
 
 .container-fluid {
-	padding: 0 0 0 0%;
+	padding-right: 0px;
 	margin: 0 0 0 18%;
 	
 }
@@ -52,20 +56,21 @@ h1 {
 .main {
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
-}
-.post-content{
-    vertical-align: middle;
-	text-align: center;
-	background-color: transparent;
-	text-shadow: 5px 5px 5px #000000;
-	color: white;
-	font-weight: bold;
-	font-family: "Ubuntu";
-    top:30%;
-    left:30%;
-    position: absolute;
+	line-height: 1.42857143;
 }
 
+.post-content{
+	text-shadow: 5px 5px 5px #000000;
+	font-weight: bold;
+	vertical-align: middle;
+	text-align: center;
+	background-color: transparent;
+	color: white;
+	top: 30%;
+	left: 30%;
+	position: absolute;
+	font-family: "Ubuntu";
+}
 .sub {
 	background-color: #3491D3;
 }
@@ -74,27 +79,50 @@ p {
 	color: white;
 	padding: 5% 5% 5% 5%;
 }
-
-
+/*forms*/
+.form-group {
+	text-align:center;
+	padding:3px 5px 0px 10px;
+	margin-bottom:100px;
+	background-color:#3491D3;
+}
+.form-control{
+	font-color: white;
+	background-color: transparent;
+	border: 2px solid white;
+	border-radius: 0px;
+}
 /*ICONS*/
+.social {
+	margin-top: 25%;
+}
+.social i {
+	margin-right: 10px;
+}
+
 .grow {
-    transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
 }
 
 .fa-twitter-square:hover:before {
-    color: rgba(0, 172, 237, 1);
-    transition: all .2s ease-in-out;
-    transform: scale(1.1);
+	color: rgba(0, 172, 237, 1);
+	transition: all .2s ease-in-out;
+	transform: scale(1.1);
 }
 
 .fa-facebook-square:hover:before {
-    color: rgba(59, 89, 152, 1);
-    transition: all .2s ease-in-out;
-    transform: scale(1.1);
+	color: rgba(59, 89, 152, 1);
+	transition: all .2s ease-in-out;
+	transform: scale(1.1);
 }
 
 .fa-github-square:hover:before {
-    color: black;
-    transition: all .2s ease-in-out;
-    transform: scale(1.1);
+	color: black;
+	transition: all .2s ease-in-out;
+	transform: scale(1.1);
+}
+
+.caption.post-content.responsive.jumbotron {
+	display: block;
+	top:10%;
 }
